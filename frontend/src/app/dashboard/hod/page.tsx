@@ -88,6 +88,7 @@ function HodDashboard() {
     setStartDate("");
     setEndDate("");
   };
+  
 
 
   return (
@@ -219,8 +220,8 @@ function HodDashboard() {
 
 export default function ProtectedHodDashboard() {
   return (
-    // <ProtectedRoute allowedRoles={["admin", "hod"]}>
+    <ProtectedRoute allowedRoles={["admin", "hod"]}>
     <HodDashboard />
-    // </ProtectedRoute>
+    </ProtectedRoute>
   );
 }
