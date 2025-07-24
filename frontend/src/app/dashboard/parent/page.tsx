@@ -167,8 +167,8 @@ function ParentPage() {
 // Role-based protected route wrapper
 export default function ProtectedParentPage() {
   return (
-    <ProtectedRoute allowedRoles={["parent"]}>
+    //<ProtectedRoute allowedRoles={["parent"]}>
     <ParentPage />
-    </ProtectedRoute>
+    //</ProtectedRoute>
   );
 }
